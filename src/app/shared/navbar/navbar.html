@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="navbar__brand">
+    Tienda Angular
+  </div>
+
+  <div class="navbar__links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Inicio
+    </a>
+
+    <a routerLink="/productos" routerLinkActive="active">
+      Productos
+    </a>
+
+    <a routerLink="/carrito" routerLinkActive="active">
+      Carrito
+    </a>
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+<section class="products-container">
+  <h1>Productos</h1>
+
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let producto of productos">
+      <img [src]="producto.imagen" [alt]="producto.nombre">
+
+      <h2>{{ producto.nombre }}</h2>
+
+      <p>{{ producto.descripcion }}</p>
+
+      <strong>${{ producto.precio }}</strong>
+    </div>
+  </div>
+</section>
